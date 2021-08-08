@@ -1,0 +1,81 @@
+.social-login{
+    text-align: center;
+    font-size: 28px;
+}
+.social-login .social-login-ico{
+    padding: 5px;
+}
+.social-login .facebook{
+    background-color: #3b5998;
+    color: #ffffff;
+}
+.social-login .google{
+    background-color: #dd4b39;
+    color: #ffffff;
+}
+.social-login .twitter{
+    background-color: #1fccff;
+    color: #ffffff;
+}
+.pass_field_icon{
+    float:right;
+    margin-right: 7px !important;
+    margin-top: -25px;
+}
+.toggle-password,.toggle-password-conform,.pass_field_icon{
+    float: right;
+    /* margin-right: 20px !important; */
+    margin-top: -25px;
+    z-index: 99999;
+    /* position: absolute; */
+    right: 0;
+    cursor: pointer;
+}
+.was-validated .form-control:invalid, .form-control.is-invalid{
+    background-image:none;
+}
+
+/*chat page */
+.chat_page .chat_list{border-radius: 10px; padding:0; box-shadow: 2px 2px 4px 0 rgba(61, 61, 61, 0.3); background-color: #ffffff; margin-top: 25px;height: calc(50vh + 185px); overflow-y: auto;}
+.chat_page .chat_list .chater_list li{display: flex;align-items: center;padding: 10px;border-top: 1px solid #ddd;cursor: pointer;}
+.chat_page .chat_list .chater_list li .product-img{height: 60px;width: 60px;border-radius: 100%;overflow: hidden;}
+.chat_page .chat_list .chater_list li .product-img img{height: 100%;width: 100%;object-fit: cover;}
+.chat_page .chat_list .chater_list li .product-info{width: calc(100% - 60px); padding-left: 10px;}
+.chat_page .chat_list .chater_list li .product-info .product-title b{color: #000;display: block;white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.chat_page .chat_list .chater_list li .product-info .product-title span{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;    font-size: 14px; color: #999999;}
+.chat_page .chat_box_right{border-radius: 10px; padding: 20px 20px 10px 20px; box-shadow: 2px 2px 4px 0 rgba(61, 61, 61, 0.3); background-color: #ffffff; margin-top: 25px;}
+.chat_page .chat_box_right .msg_header{display: flex;align-items: center;    padding-bottom: 20px; border-bottom: 1px solid #ddd;}
+.chat_page .chat_box_right .msg_header .img_user{height: 70px;width: 70px;border-radius: 100%;overflow: hidden;}
+.chat_page .chat_box_right .msg_header .img_user img{height: 100%;width: 100%;object-fit: cover;}
+.chat_page .chat_box_right .msg_header .user_name{width: calc(100% - 70px);padding-left: 15px;font-size: 20px;}
+.chat_page .chat_box_right #comments-container .msg+.msg{margin-top: 5px;}
+.chat_page .chat_box_right #comments-container .text{display: flex;width: 100%;align-items: flex-end;}
+.chat_page .chat_box_right #comments-container .text.to{justify-content: flex-end}
+.chat_page .chat_box_right #comments-container .text p{font-size: 14px; color: #FFF; border-radius: 5px; background-color: #ef4426; padding: 10px 15px; display: inline-block; vertical-align: bottom; font-weight: 400; max-width: 50%;margin: 0 10px;    word-break: break-all;}
+.chat_page .chat_box_right #comments-container .text div{margin: 0 10px !important;}
+.chat_page .chat_box_right #comments-container .text.to p{background-color: #eeeeee;color: #1B1B1B;}
+.chat_page .chat_box_right #comments-container .text .avatar{height: 40px;width: 40px;border-radius: 100%;overflow: hidden;}
+.chat_page .chat_box_right #comments-container .text .avatar img{height: 100%;width:100%;object-fit: cover;}
+.chat_page .chat_box_right #comments-container .date{font-size: 12px;margin-top: 5px;display: block;font-weight: 400;}
+.chat_page .chat_box_right #twemoji-textarea{margin-left: 0;}
+.chat_page .chat_box_right .submit_btn .button{position: absolute; top: -48px; right: 20px;font-weight: 400;background-color: #ef4426;padding: 0; line-height: 0;}
+.chat_page .chat_box_right .submit_btn .button svg{height: 32px; padding: 5px; fill: #FFF;}
+
+.notifications_icon{
+    height: 25px;
+    width: 25px;
+    background-color: rgba(225,225,225,1);
+    border-radius: 100%;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 25px;
+    position: absolute;
+    text-align: center;
+    top: -12px;
+    position: relative;
+    color: #000;
+}
+.notification_detsil_count{
+    background-color: green;
+    color: #ffffff;
+}

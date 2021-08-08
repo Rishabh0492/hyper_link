@@ -1,0 +1,174 @@
+.text-red{
+  display: block;
+}
+
+.login-page, .register-page {
+    background-image: url(bg2.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.toast-top-center {
+    top: 55px;
+}
+
+.login-logo img{
+    height: 100px;
+}
+
+.colorRed{
+    color: #dd4b39 ;
+}
+.profile-user-img {
+    height: 100px;
+    object-fit: cover;
+}
+input[type=checkbox], input[type=radio] {
+    margin: 4px 0 0;
+    margin-top: 1px\9;
+    line-height: normal;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+.dynamicDiv .btn {
+    width: 17%;
+    float: right;
+}
+.dynamicDiv .form-control {
+    width: 80%;
+    display: inline-block;
+    border: none;
+    padding-left: 0;
+}
+.dynamicDiv {
+    margin-top: 15px;
+}
+.addQuestion, .removeQuestion{
+  float: right;
+  margin-right: 15px;
+}
+.subcategory_div{
+  display: none;
+}
+#serviceForm.form-horizontal .control-label,#updateServiceForm.form-horizontal .control-label{
+  text-align: left;
+  margin-bottom: 7px;
+}
+#updateServiceForm .dynamicDiv .form-control {
+    width: 60%;
+}
+#updateServiceForm .dynamicDiv a >img{
+    object-fit: cover;
+}
+#updateServiceForm .update_cover{
+  padding-left: 10px;
+}
+.select_age{
+  width: 80px;
+  display: inline-block;
+}
+.form-control.location_in{
+  margin-bottom: 15px;
+}
+@media(max-width:767px)
+{
+    .jointbox{
+        margin-bottom: 15px;
+    }
+}
+
+.popular-experience {
+    min-height: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    width: 100%;
+}
+a.grid_item figure {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+a.grid_item .info {
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+    display: block;
+    padding: 25px 20px 5px;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    background: 0 0;
+    background: -webkit-linear-gradient(top, transparent, #000);
+    background: linear-gradient(to bottom, transparent, #000);
+}
+
+.box_list figure small {
+    position: absolute;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, .6);
+    right: 10px;
+    top: 10px;
+    text-transform: uppercase;
+    color: #ccc;
+    font-weight: 600;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    padding: 7px 10px 4px;
+    line-height: 1;
+    z-index: 99;
+}
+.box_list small {
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 600;
+}
+.profile_image_showInput {
+    opacity: 0;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.changeImage {
+    background: #f07e2c none repeat scroll 0 0;
+    border-radius: 4px;
+    pointer-events: none;
+    display: block;
+    padding: 5px 15px;
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    text-align: center;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    max-width: 300px;
+}
+#messagesPart{
+    height: 340px;
+}
+#map{
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.select2-container--default .select2-selection--single{
+    border: 1px solid #d2d6de;
+    border-radius: 0;
+}
+.select2-container .select2-selection--single{
+    height: 34px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered{
+    padding-left: 0;
+}
+.select2-container{
+    display: block;
+    width: 100% !important;
+}

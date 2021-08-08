@@ -1,0 +1,85 @@
+   textarea {
+            resize: none;
+        } 
+        .container{
+            text-align: center;
+        }
+        section{
+            margin-bottom: 50px;
+        }
+
+    label.cabinet{
+        display: block;
+        cursor: pointer;
+    }
+     
+    label.cabinet input.file{
+        position: relative;
+        height: 100%;
+        width: auto;
+        opacity: 0;
+        -moz-opacity: 0;
+        filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+        margin-top:-30px;
+        display: none;
+    }
+
+    #upload-demo{
+        /* width: 250px; */
+        height: 700px;
+        /* padding-bottom:25px; */
+    }
+    figure figcaption {
+        position: absolute;
+        bottom: -45px;
+        margin-left: -17px;
+        color: #fff;
+        width: 100%;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        text-shadow: 0 0 10px #000;
+    }
+    .modal-backdrop{
+        background-color:transparent !important;
+        position: relative !important;
+    }
+    .fade{
+        opacity: 9999;
+    }
+    .modal-body{
+        height: 700px;
+    }
+    .modal-bodyfaq{
+        height: 820px;
+    }
+
+    #cropImagePop .modal-dialog,#cropImagePop1 .modal-dialog,#cropImagePop2 .modal-dialog,#cropImagePop3 .modal-dialog,#cropImagePopfaq .modal-dialog,
+    #cropImagePopmem .modal-dialog,#cropImagePopico1 .modal-dialog,,#cropImagePopico2 .modal-dialog{
+        /* top: 200px; */
+        /* left: 25%; */
+        width: 100% !important;
+    }
+    .modal-content{
+        /* width: 36% !important; */
+    }
+    .img-thumbnail{
+        width: 300px !important;
+        height: 250px !important;
+    }
+
+    .img-thumbnail-top{
+        width: 160px !important;
+        height: 600px !important;
+    }
+    .old_profile_imageSub{
+        width: 550px;
+        height: 387px;
+    }
+    .cms_page_icon{
+        height:100px;
+        width:100px;    
+        object-fit: cover;
+    }
+    .modal-dialog{
+        width: 100%;
+    }

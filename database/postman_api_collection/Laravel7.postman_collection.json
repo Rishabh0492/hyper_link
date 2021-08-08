@@ -1,0 +1,524 @@
+{
+	"info": {
+		"_postman_id": "7d6c5031-3b51-41b8-9070-b5cb96ff5d2d",
+		"name": "Laravel7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login/SignUp",
+			"description": null,
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "language",
+								"type": "text",
+								"value": "en"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": {\n    \"email\": \"bindrashah19@gmail.com2\",\n    \"password\": \"Bindra@123\",\n    \"device_type\": \"1\",\n    \"device_token\": \"asd\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{url}}/api/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LogOut",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI2IiwianRpIjoiNTlmNjY3ZDQ4ODljOWQzOGYxNGZiMDViZDQ0Nzk2YzlhZmQ1MjEwZjZhYjY2ZWZhZmQ5MzJiMjU1NzY4Zjc2ODFlZjgxMjEyNzMyMWQ2YjciLCJpYXQiOjE1OTkxMjYxMjMsIm5iZiI6MTU5OTEyNjEyMywiZXhwIjoxNjMwNjYyMTIyLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.TncpbOLrMc4yYjgq3ubljgjPFtwO96WK23osifC3CIQR4PCEnaq9PeZuJjfeJjqYEdLMOdLTysp1dkC9nd7s2zx6DOPnQVNXQOBYGhkbPES6a2Dwy1IFssiCARpOkyj3Qc61kyv1coia9r9fxVULBkJCgHCs5LXuQoKCN1caEMsX0DfYtiBN1Nm9xfhjGUCdQJvwARj3QfTIIrfYEMLcEzUUeP7fExy1-DyVvn0kGg2-JQ-Ck1STqz4DwcSmeePn9S5XRssdFApIVwDPz-tmLukQFxeWdG9y37AUUkjTXw4EcVxMRuYfTrn-LgByqbVOYS2DTIiDei37MNWF_Q4DhrddfGj_S77lVbSyiuebekeN1uH0ChLDz7CgHhlyvdbLga3KGrw1GZF_naYS7AyF1g6PQCEBKvbpAIyYuDOLOUkdJi38Q-8I63fzvy5gciAb39MKkqcF97s9AFPeS2AYWCI06UOhVO7jWyZ36uuf9TZBNZxNEx76WEGLf5pSHT5Md1YFQoEKUlCcetDZPEthUWOCWzkHzFyAyciXdo7Gkgu9AByVYcvBo6KUB7SRrjkgDiFsWHHGded_Ex0DDfxHzpFRObnK4E4yRJht-6whauStUeOzVwLbmRVoYko_MdShAXdy6njYVPNfr-bfeVRF_dA02__nWHgL4i2KmuHl010",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n  \"data\": {\n    \t\"device_token\": \"22\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{url}}/logout",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "language",
+								"value": "en"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": {\n    \"email\": \"ssss@mailinator.com\",\n    \"first_name\": \"Dh\",\n    \"last_name\": \"Gh\",\n    \"password\": \"Letsdoit@123\",\n    \"device_type\": \"1\",\n    \"device_token\": \"device_token\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{url}}/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Social Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "language",
+								"value": "en"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n  \"data\": {\n            \"first_name\": \"Dhaval\",\n    \t\t\"last_name\": \"Ghoniya\",\n            \"email\":\"dhavalghoniya.letsnurture@gmail.com\",\n    \t\t\"social_provider\": \"twitter\",\n            \"social_provider_id\" : \"1234567896\",\n    \t\t\"device_type\": \"1\",\n            \"device_token\":\"123456\"\n       }\n}                   \n"
+						},
+						"url": {
+							"raw": "{{url}}/socialRegister",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"socialRegister"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n  \"data\": {\n    \t\t\"email\": \"dhaval.u@mailinator.com\"\n       }\n}"
+						},
+						"url": {
+							"raw": "{{url}}/forgotPassword",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"forgotPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n  \"data\": {\n    \t\t\"old_password\": \"qwertyuipo\",\n    \t\t\"new_password\":\"123456789\"\n       }\n}"
+						},
+						"url": {
+							"raw": "{{url}}/changePassword",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0c8bc5c3-de70-4daf-a90f-601c52322225",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "318314f2-eb8f-482d-91ba-8bb8aff16180",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "user",
+			"description": "",
+			"item": [
+				{
+					"name": "Update Device Type and Device Token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n  \"data\": {\n        \"device_type\": \"1\",\n        \"device_token\":\"tokenadroid\",\n        \"device_app_type\":\"debug\"\n       }\n}"
+						},
+						"url": {
+							"raw": "{{url}}/updateDeviceToken",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"updateDeviceToken"
+							]
+						},
+						"description": "Device_type => 1 - IOS / 2 - Android\ndevice_app_type => \"debug\" or \"live\""
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijk2NGUxM2RlYmIzYmFmYWQwODUwZjE5NTZlMGQ3ZmI1MzMxNDE3NjA3ZGMzYzNhMDcwZjFjZWU2ZGFiNGFkMDIzMTJlZTQxZmJmYjFlNDc3In0.eyJhdWQiOiIzIiwianRpIjoiOTY0ZTEzZGViYjNiYWZhZDA4NTBmMTk1NmUwZDdmYjUzMzE0MTc2MDdkYzNjM2EwNzBmMWNlZTZkYWI0YWQwMjMxMmVlNDFmYmZiMWU0NzciLCJpYXQiOjE1NzY0ODA1MTEsIm5iZiI6MTU3NjQ4MDUxMSwiZXhwIjoxNjA4MTAyOTExLCJzdWIiOiI1Iiwic2NvcGVzIjpbXX0.H6Ydh6NespmjAejJePAPC-pFeBTbaNvUcFDhG7m14cUuDV6Qdgyl1DTaX0N_nh1QPxjtfamQg5rmLq5Viad88DaGeVPYqG-wcGLkxf2HBQtFirpRlkxF7oKG-Oh9hoJzq1xKHDZaCWeJehwGogfzS6sU4fVZM3h6Mp7cewfYhCTFjz2no51ojVrdja12_na_fNvrX9DuOfwCsQ7mWw5xQ3nZLc0bHVdpZAmpVsOEMixNS_DjU8HvqljfDFxxDN0TLIDV8VrqNR6SeFpMj-lfKIAc9h69hgL8cGTfid1_ZljgmEFYMIv_8jLkl0Ggj4I3SLVErsZslM_bLpmEI27u4IBEwSUm40_V7nXxt2mQZW2e8ut9NK5ZQe8ooJ099nOT-t6IQBQGg6VFf6PImUEgfBKzLLpjlDJAMPQnUgJmpeEmo-27s3cNXd7EEuCoHbQ39xb4YF71HBRox4ffVKWCVVe_Y15Npp01iAIqkzYf28tWtGDD3gGAgwkoQNpW3d0Pm028v3kWFn8ex9Fh_nYm9cLPQARrqBWmKsggqsXfNiOg47_G0Lf0i-YKNlggcLd3gLLczC8vnyEWqdPAe5KZj1kcXrUyvLPd3tJHkS58OnhvvE2EQKQGiaMyJa8QmldJdlWoASnrydBjBFq9YB0VYTOGd-cuch90rLqnKTLJ3J8",
+								"disabled": true
+							},
+							{
+								"key": "language",
+								"value": "en",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "data",
+									"value": "{   \n  \"data\": {\n        \"first_name\": \"Dh\",\n \"last_name\": \"Dh\",\n                \"dob\": \"10-2019\",\n        \"user_mobile\":\"91-96325874\",\n                \"gender\": \"m\"\n     \n       }\n}",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "profile_image",
+									"description": "",
+									"type": "file"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/updateProfile",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"updateProfile"
+							]
+						},
+						"description": "gender ->  (f-> female,m ->male ,o -> other) in lowercase,\n\nuser_mobile -> 91-113131151,\n\ndob -> mm-yyyy(01-1990),\n\npatient_type -> 1->mother/baby, 2->EPOC, 3->hypertension, 4-> diabetic"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Chat",
+			"description": null,
+			"item": [
+				{
+					"name": "Get User Chat List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/getUserChatList",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"getUserChatList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Last Message",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n  \"data\": {\n    \"id\": \"20\",\n    \"message\": \"hello\"\n   }\n}   "
+						},
+						"url": {
+							"raw": "{{url}}/saveLastMessage",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"saveLastMessage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mark as read chat message",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n  \"data\": {\n    \"id\": \"17\"\n   }\n}   "
+						},
+						"url": {
+							"raw": "{{url}}/markReadMessage",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"markReadMessage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get chat ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n  \"data\": {\n        \"user_id1\": \"48\",\n        \"user_id2\": \"40\",\n        \"job_id\":\"\",\n        \"property_id\":\"\",\n        \"realtor_id\":\"\",\n        \"videographer_id\":\"\"\n    }\n}   "
+						},
+						"url": {
+							"raw": "{{url}}/getChatID",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"getChatID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload Media",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mediaType",
+									"value": "Image",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "mediaFile",
+									"type": "file"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/updateMedia",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"updateMedia"
+							]
+						},
+						"description": "mediaType => Image/Video"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,6 @@
+ALTER TABLE `users` ADD `google_id` VARCHAR(255) NULL AFTER `social_provider_id`, ADD `facebook_id` VARCHAR(255) NULL AFTER `google_id`, ADD `twitter_id` VARCHAR(255) NULL AFTER `facebook_id`;
+
+ALTER TABLE `users` ADD `confirmation_code` VARCHAR(255) NULL AFTER `password`;
+ALTER TABLE `users` ADD `device_app_type` VARCHAR(255) NULL AFTER `device_type`;
+ALTER TABLE `users` ADD `country_code` VARCHAR(255) NULL AFTER `hear_about_us`;
+ALTER TABLE `users` CHANGE `gender` `gender` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL;
